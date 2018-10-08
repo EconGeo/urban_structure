@@ -1,1 +1,1 @@
-# urban_structure
+This repo contains files for collaboration on work in urban structure effect on the real estate returns.  Use of this material should contain a citation of the author's work contained in CITATION.txt contained in this repo.

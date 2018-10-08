@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+load required packages
+```{r message=FALSE, warning=FALSE}
+library(sf)
+library(spData)
+library(spDataLarge)
+library(rgdal)
+library(tidyverse)
+```
+load EPA SLD database (note:  doesn't work on mac because the fucking EPA uses a .zipx file extension which only works on Windoze.  )
+```{r}
+#download.file(url = "https://edg.epa.gov/data/PUBLIC/OP/SLD/SLD_shapefile.zip",
+#             destfile = "SLD_shapefile.zip")
+# unzip(zipfile = "SLD_shapefile.zip")
+# unzip(zipfile = 'SLD_SF.zipx')
+SLD = st_read(dsn = "data_EPA/SLD_sf/SmartLocationDB.shp")
+```
+
+Plot something from the dataset
+```{r}
+library(ggmap)
+```
+
+
